@@ -5,4 +5,6 @@ const SocketContext = createContext();
 
 export const useSocket = () => useContext(SocketContext);
 
-export const SocketProvider = 
+export const SocketProvider = ({ children }) => {
+  const [socket, setSocket] = useState(null);
+}
